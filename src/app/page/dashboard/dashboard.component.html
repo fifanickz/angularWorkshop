@@ -1,0 +1,20 @@
+
+<input type="text" name="todayText" id=""  [(ngModel)]="todayText" >
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <app-dashboard-item [title]="todayText" (itemClick)="onTodayItemClick($event)"></app-dashboard-item>
+    </div>
+    <div class="col">
+        <app-dashboard-item [title]="yesterday"></app-dashboard-item>
+    </div>
+    <div class="col">
+        <app-dashboard-item [title]="lastweek"></app-dashboard-item>
+    </div>
+  </div>
+</div>
+
+  
+   
+

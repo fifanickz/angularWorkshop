@@ -1,0 +1,27 @@
+
+ 
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      {{title | uppercase }}  {{'1234567890123456' | trimCreditCard:'X'}}
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{_currentdate | date:'dd MMM yyyy'}}           
+        </li>
+      <li (click)="onItemClick('Calories');" class="list-group-item d-flex justify-content-between align-items-center">
+        Calories
+        <span class="badge badge-primary badge-pill">{{ 2400 | number:'1.2-3' }}</span>
+      </li>
+      <li (click)="onItemClick('Sleep');" class="list-group-item d-flex justify-content-between align-items-center">
+        Sleep
+        <span class="badge badge-primary badge-pill">2</span>
+      </li>
+      <li (click)="onItemClick('Weight');" class="list-group-item d-flex justify-content-between align-items-center">
+        Weight
+        <span class="badge badge-primary badge-pill">1</span>
+      </li>
+      <li (click)="onItemClick('BMI');" class="list-group-item d-flex justify-content-between align-items-center">
+        BMI
+        <span class="badge badge-primary badge-pill">1</span>
+      </li>
+    </ul>
